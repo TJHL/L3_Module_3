@@ -17,6 +17,7 @@ public class TestInterfaces {
 		SpecialString mcs = new MixedCapsString("This is also a test");
 		System.out.println(mcs);
 		assertEquals("tHiS Is aLsO A TeSt", mcs.toString());
+		//			  _|_|_|_|_|_|_|_|_|_
 	}
 
 }
