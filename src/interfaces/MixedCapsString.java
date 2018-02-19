@@ -8,23 +8,22 @@ public class MixedCapsString extends SpecialString{
 	}
 
 	@Override
-	public String funkifyText(String tasj) {
-		String tempLower="";
-		String tempUpper= "";
-		String tempTote= "";
+	public String funkifyText(String s) {
+		String Comp= "";
+
 		
 		for (int i = 0; i < s.length(); i++) {
 			if(i%2==0) {
-				tempLower += Character.toLowerCase(s.charAt(i));
-				tempTote= tempTote +tempLower;
+				Comp= Comp + Character.toLowerCase(s.charAt(i));
+			
 			}
 			if(i%2 !=0) {
-				tempUpper += Character.toUpperCase(s.charAt(i));
-				tempTote= tempTote +tempUpper;
+				Comp= Comp + Character.toUpperCase(s.charAt(i));
+				
 			}
 			
 		}
-		return tempTote;
+		return Comp;
 	}
 
 }

@@ -2,8 +2,8 @@ package interfaces;
 
 public class BackwardsString extends SpecialString{
 
-public	BackwardsString(String GHIaba){
-		super(GHIaba);
+public	BackwardsString(String s){
+		super(s);
 	}
 
 	@Override
